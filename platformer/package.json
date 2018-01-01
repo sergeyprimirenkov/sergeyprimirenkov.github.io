@@ -1,0 +1,14 @@
+{
+  "name": "platformer",
+  "version": "1.0.0",
+  "description": "Platformer on Phaser with Tiled",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Sergey Primirenkov",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.15.2"
+  }
+}

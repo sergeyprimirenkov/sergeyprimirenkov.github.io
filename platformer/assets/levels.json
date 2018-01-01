@@ -1,0 +1,4 @@
+{
+  "playerStart": {"x": 70, "y": 100},
+  "levelSelect": {"level1": "tilemap"}
+}
