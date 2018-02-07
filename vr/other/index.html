@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>VR Demo</title>
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <!-- <script src="js/webvr-ui.min.js"></script> -->
+  <!-- <script src="js/webvr-polyfill.min.js"></script> -->
+  <!-- <script>
+  var renderer = new THREE.WebGLRenderer();
+  var options = {'color': 'rgba(255, 255, 255, .5)'};
+  var enterVR = new webvrui.EnterVRButton(renderer.domElement, options);
+  document.body.appendChild(enterVR.domElement);
+  </script> -->
+</head>
+
+<body>
+  <a-scene>
+
+    <a-assets>
+      <img id="boxTexture" crossorigin="anonymous" src="https://i.imgur.com/mYmmbrp.jpg">
+      <img id="groundTexture" crossorigin="anonymous" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+      <img id="skyTexture" crossorigin="anonymous" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+      <!-- <img id="infoText" src="/assets/info.png"> -->
+      <img id="pedestalTexture" crossorigin="anonymous" src="assets/metal.jpg">
+      <audio src="assets/music.mp3" crossorigin="anonymous" autoplay
+      preload loop></audio>
+      <a-asset-item id="avent" crossorigin="anonymous" src="assets/avent.obj"></a-asset-item>
+      <a-asset-item id="avent_texture" crossorigin="anonymous" src="assets/avent.mtl"></a-asset-item>
+      <a-asset-item id="lp670" crossorigin="anonymous" src="assets/lp670.obj"></a-asset-item>
+      <a-asset-item id="lp670_texture" crossorigin="anonymous" src="assets/lp670.mtl"></a-asset-item>
+    </a-assets>
+
+    <a-entity id="car" obj-model="obj:#avent;mtl:#avent_texture" scale="1 1 1" position="0 0 5" rotation="0 -90 0" visible="true" material="">
+     <a-animation attribute="rotation" to="0 270 0" dur="86400" easing="linear" direction="normal" repeat="indefinite"></a-animation>
+    </a-entity>
+
+    <!-- <a-plane id="info" src="#infoText" position="0 2.1 3" rotation="14.5 180 0" height="1" width="2" visible="false">
+    </a-plane> -->
+
+    <!-- <a-entity id="title" position="0 1.9 5" rotation="0 180 0" scale="4 4 4" text="align:center;opacity:0.5;value:Lamborghini Aventador" visible="false">
+      <a-animation attribute="position" to="0 1.6 5" direction="alternate" dur="2000"
+      repeat="indefinite"></a-animation>
+    </a-entity> -->
+
+    <a-entity position="0 0 5" id="pedestal" geometry="mergeTo:null;primitive:cylinder;height:0.1;radius:2.5;segmentsRadial:72;" material="color:#ccc;metalness:0.7;src:#pedestalTexture">
+      <a-animation attribute="rotation" to="0 360 0" dur="86400" easing="linear" repeat="indefinite"></a-animation>
+    </a-entity>
+
+    <a-entity id="car1" position="0 2.5 5" rotation="0 180 0" geometry="mergeTo:null;primitive:plane;height:1;width:1;depth:0.1"  text="align:center;color:#000;height:2;opacity:1;value:Lamborghini Aventador;width:2" material="color:#3a3a3a;">
+    </a-entity>
+
+    <a-entity id="car2" position="-1.5 2.5 5" rotation="0 180 0" geometry="mergeTo:null;primitive:plane;height:1;width:1;depth:0.1"  text="align:center;color:#000;height:2;opacity:1;value:Lamborghini Gallardo;width:2" material="color:#7d7d7d;">
+    </a-entity>
+
+    <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
+    
+    <a-light type="point" intensity="2" position="1 10 -3"></a-light>
+
+    <a-plane src="#groundTexture" rotation="-90 0 0" height="100" width="100"></a-plane>
+
+    <a-camera position="0 0 0" rotation="0 180 0">
+      <a-cursor id="cursor" color="#fafafa">
+    </a-camera>
+
+  </a-scene>
+
+  <script>
+    var car = document.querySelector('#car');
+    var info = document.querySelector('#title');
+    var car1 = document.querySelector('#car1');
+    var car2 = document.querySelector('#car2');
+    var cursor = document.querySelector('#cursor');
+
+    car1.addEventListener('mouseenter', function() {
+      car1.setAttribute('scale', {x: 1.2, y: 1.2, z: 1.2});
+      cursor.setAttribute('color', 'red');
+    });
+    car1.addEventListener('mouseleave', function() {
+      car1.setAttribute('scale', {x: 1, y: 1, z: 1});
+      cursor.setAttribute('color', '#fafafa');
+    });
+    car1.addEventListener('click', function() {
+      car2.setAttribute('material', 'color:#7d7d7d');
+      car1.setAttribute('material', 'color:#3a3a3a');
+      car.setAttribute('obj-model', 'obj:#avent;mtl:#avent_texture');
+      car.setAttribute('position', { x: 0, y: 0, z: 5 });
+    });
+    car2.addEventListener('mouseenter', function() {
+      car2.setAttribute('scale', {x: 1.2, y: 1.2, z: 1.2});
+      cursor.setAttribute('color', 'red');
+    });
+    car2.addEventListener('mouseleave', function() {
+      car2.setAttribute('scale', {x: 1, y: 1, z: 1});
+      cursor.setAttribute('color', '#fafafa');
+    });
+    car2.addEventListener('click', function() {
+      car1.setAttribute('material', 'color:#7d7d7d');
+      car2.setAttribute('material', 'color:#3a3a3a');
+      car.setAttribute('obj-model', 'obj:#lp670;mtl:#lp670_texture');
+      car.setAttribute('rotation', JSON.stringify({ x: -90, y: -90, z: 0 }));
+      car.setAttribute('position', { x: 0, y: 0.560, z: 5 });
+    });
+  </script>
+</body>
+
+</html>

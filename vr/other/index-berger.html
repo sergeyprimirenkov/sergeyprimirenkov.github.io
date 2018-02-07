@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>VR Demo</title>
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <!-- <script src="https://rawgit.com/ngokevin/aframe-animation-component/master/dist/aframe-animation-component.min.js"></script> -->
+  <!-- <script src="js/webvr-ui.min.js"></script> -->
+  <!-- <script src="js/webvr-polyfill.min.js"></script> -->
+  <!-- <script>
+  var renderer = new THREE.WebGLRenderer();
+  var options = {'color': 'rgba(255, 255, 255, .5)'};
+  var enterVR = new webvrui.EnterVRButton(renderer.domElement, options);
+  document.body.appendChild(enterVR.domElement);
+  </script> -->
+</head>
+
+<body>
+  <a-scene>
+
+    <a-assets>
+      <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
+      <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+      <!-- <img id="skyTexture" src="assets/space.jpg"> -->
+      <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+      <!-- <img id="infoText" src="/assets/info.png"> -->
+      <img id="pedestalTexture" src="assets/metal.jpg">
+      <img id="bergerTexture" src="assets/bergerTexture.jpg">
+      <img id="wallTexture" src="assets/wallTexture.jpg">
+      <audio src="assets/music.mp3" autoplay
+      preload loop></audio>
+      <a-asset-item id="avent" src="assets/avent.obj"></a-asset-item>
+      <a-asset-item id="avent_texture" src="assets/avent.mtl"></a-asset-item>
+      <a-asset-item id="bergerModel" src="assets/berger.obj"></a-asset-item>
+      <a-asset-item id="apollo" src="assets/apollo.obj"></a-asset-item>
+      <a-asset-item id="apollo_texture" src="assets/apollo.mtl"></a-asset-item>
+      <a-asset-item id="hiltepold" src="assets/hiltepold.obj"></a-asset-item>
+      <a-asset-item id="hiltepold_texture" src="assets/hiltepold.mtl"></a-asset-item>
+    </a-assets>
+
+    <a-entity id="berger" position="0 0 -2.1" scale="0.1 0.1 0.1"  material="src:#bergerTexture" obj-model="obj:#bergerModel"></a-entity>
+    <a-entity id="bergerTitle" position="-0.083 0.645 -1.619" scale="2.5 2.5 2.5" text="align:center;color:#000;opacity:1;value:Le Berger - Shepherd"></a-entity>
+
+    <a-entity id="apollo" position="-2.7 0 -1.7" rotation="-90 -45 0" scale="0.1 0.1 0.1" obj-model="obj:#apollo;mtl:#apollo_texture"></a-entity>
+    <a-entity id="apolloTitle" position="-2.861 0.645 -1.333" scale="2.5 2.5 2.5" text="align:center;color:#000;opacity:1;value:The Belvedere Apollo"></a-entity>
+
+    <a-entity id="hiltepold" position="2.7 0 -1.7" scale="0.001 0.001 0.001" obj-model="obj:#hiltepold;mtl:#hiltepold_texture"></a-entity>
+    <a-entity id="hiltepoldTitle" position="2.59 0.645 -1.526" scale="2.5 2.5 2.5" text="align:center;color:#000;opacity:1;value:Hiltepold of Schwangau"></a-entity>
+
+    <a-entity id="backWall" position="0 1.5 -3.1" rotation="0 90 0"  geometry="mergeTo:null;depth:12;height:3;width:0.1" material="src:#wallTexture"></a-entity>
+   
+    <a-entity id="wall-1" position="-1.5 1.5 -2.2" geometry="mergeTo:null;depth:1.7;height:3;width:0.05" material="src:#wallTexture"></a-entity>
+
+    <a-entity id="wall-2" position="1.5 1.5 -2.2" geometry="mergeTo:null;depth:1.7;height:3;width:0.05" material="src:#wallTexture"></a-entity>
+
+    <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
+    
+    <a-light type="point" intensity="1.5" position="0 7 2"></a-light>
+
+    <a-plane src="#groundTexture" rotation="-90 0 0" height="100" width="100"></a-plane>
+
+    <a-camera position="0 0 1.1" rotation="0 0 0">
+      <a-cursor color="#FAFAFA">
+    </a-camera>
+
+  </a-scene>
+
+  <script>
+    var car = document.querySelector('#car');
+    var info = document.querySelector('#title');
+    car.addEventListener('mouseenter', function() {
+      info.setAttribute('visible', true);
+    });
+    car.addEventListener('mouseleave', function() {
+      info.setAttribute('visible', false);
+    });
+  </script>
+</body>
+
+</html>

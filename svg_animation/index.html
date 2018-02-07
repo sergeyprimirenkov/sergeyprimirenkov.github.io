@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Сергей Примиренков | SVG Animation</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <script src="segment.min.js"></script>
+  <script src="ease.min.js"></script>
+  <script src="vivus.js"></script>
+  <script src="pathformer.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Wrapper -->
+    <div id="menu-icon-wrapper" class="menu-icon-wrapper">
+
+      <!-- SVG element with paths -->
+      <svg width="100px" height="100px">
+        <path id="pathA" d="M 30 40 L 70 40 C 90 40 90 75 60 85 A 40 40 0 0 1 20 20 L 80 80" />
+        <path id="pathB" d="M 30 50 L 70 50" />
+        <path id="pathC" d="M 70 60 L 30 60 C 10 60 10 20 40 15 A 40 38 0 1 1 20 80 L 80 20" />
+      </svg>
+      <!-- Trigger to perform the animations -->
+      <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+    </div>
+
+
+
+
+    <!-- Wrapper 2-->
+    <div id="menu-icon-wrapper2" class="menu-icon-wrapper">
+
+      <!-- SVG element with paths -->
+      <svg width="100px" height="100px">
+        <path id="pathAz" d="M 70,40 30,40 C 6.7414841,40 8.5392133,49.363964 8.5392133,49.363964 c 0,0 -0.2996216,2.696593 -0.2996216,10.936185 -1.3229854,9.090083 18.4954453,10.94551 22.4716143,8.389402 L 59.745763,39.830508" />
+        <path id="pathBz" d="M 30 50 L 70 50" />
+        <path id="pathCz" d="m 69.986055,60.039078 -40,0 c -23.2585154,0 -21.4607862,-9.363964 -21.4607862,-9.363964 0,0 -0.2996216,-2.696593 -0.2996216,-10.936185 C 6.9026618,30.648846 26.721092,28.793418 30.697261,31.349527 l 9.133247,8.480981 19.915255,20.338984" />
+      </svg>
+      <!-- Trigger to perform the animations -->
+      <button id="menu-icon-trigger2" class="menu-icon-trigger"></button>
+    </div>
+
+
+
+
+
+    <!-- Wrapper 3-->
+    <div id="menu-icon-wrapper3" class="menu-icon-wrapper">
+
+      <!-- SVG element with paths -->
+      <svg width="100px" height="100px">
+        <path id="pathAx" d="m 30,40 40,0 c 21.313559,0 6.271186,-13.09322 6.271186,-13.09322 0,0 -4.449152,-3.81356 -5.084745,-2.966102 -0.635594,0.847458 -11.864407,16.313559 -11.864407,16.313559 l 0.423729,-0.423729 -19.915255,20.338984" />
+        <path id="pathBx" d="M 30 50 L 70 50" />
+        <path id="pathCx" d="m 29.922468,60.064789 40,0 c 21.31356,0 6.271186,13.093219 6.271186,13.093219 0,0 -4.449152,3.813562 -5.084745,2.966102 C 70.473315,75.27665 59.244502,59.810552 59.244502,59.810552 l 0.423729,0.423729 -19.915255,-20.338984" />
+      </svg>
+      <!-- Trigger to perform the animations -->
+      <button id="menu-icon-trigger3" class="menu-icon-trigger"></button>
+    </div>
+
+
+
+
+
+
+    <!-- Wrapper 4-->
+    <div id="menu-icon-wrapper4" class="menu-icon-wrapper">
+
+      <!-- SVG element with paths -->
+      <svg width="100px" height="100px">
+        <path id="pathAc" d="M 70,40 30,40 C 16.628994,39.850189 12.883725,45.468884 12.883725,45.468884 5.8755614,52.83646 68.811846,49.23295 69.811814,49.963207 L 50.486226,37.379103" />
+        <path id="pathBc" d="M 30 50 L 70 50" />
+        <path id="pathCc" d="m 70.16873,60.080332 -40.019013,0 C 16.772354,60.228714 13.025305,54.663621 13.025305,54.663621 6.0138106,47.366333 68.980011,50.935465 69.980455,50.212175 l -19.334774,12.46405" />
+      </svg>
+      <!-- Trigger to perform the animations -->
+      <button id="menu-icon-trigger4" class="menu-icon-trigger"></button>
+    </div>
+  </div>
+
+<div class="container">
+<div id="circleContainer" class="circle">
+    <svg width="60px" height="60px">
+        <path id="circle" d="M 30 30 m 0, -25 a 25,25 0 1,1 0,50 a 25,25 0 1,1 0,-50"></path>
+      </svg>
+      </div>
+  </div>
+
+  <div class="container-2">
+
+    <div class="blueprint iphone" id="bl1">
+      <object id="iphone" type="image/svg+xml" data="iphone.svg"></object>
+      <div class="repeat-buttons button-iphone">
+        <button class="repeat" id="button1"></button>
+      </div>
+    </div>
+
+    <div class="blueprint ipad" id="bl2">
+      <object id="ipad" type="image/svg+xml" data="ipad.svg"></object>
+      <div class="repeat-buttons button-ipad">
+        <button class="repeat" id="button2"></button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="drawing-watch">
+    <img class="watch-img" src="watch_ready.png" alt="" id="watch-display">
+    <object id="watch" type="image/svg+xml" data="watch.svg"></object>
+    <div>
+
+    </div>
+
+  </div>
+  <button class="repeat repeat-watch" id="button3"></button>
+  <script>
+    var iphoneConture = new Vivus('iphone', {
+      start: 'manual'
+    });
+
+    var ipadConture = new Vivus('ipad', {
+      start: 'manual'
+    });
+
+    var watchConture = new Vivus('watch', {
+      start: 'manual'
+    });
+
+
+
+    var UID = {
+      _current: 0,
+      getNew: function () {
+        this._current++;
+        return this._current;
+      }
+    };
+
+    HTMLElement.prototype.pseudoStyle = function (element, prop, value) {
+      var _this = this;
+      var _sheetId = "pseudoStyles";
+      var _head = document.head || document.getElementsByTagName('head')[0];
+      var _sheet = document.getElementById(_sheetId) || document.createElement('style');
+      _sheet.id = _sheetId;
+      var className = "pseudoStyle" + UID.getNew();
+
+      _this.className += " " + className;
+
+      _sheet.innerHTML += " ." + className + ":" + element + "{" + prop + ":" + value + "}";
+      _head.appendChild(_sheet);
+      return this;
+    };
+
+
+    var play1 = document.getElementById("button1"),
+      play2 = document.getElementById("button2"),
+      play3 = document.getElementById("button3");
+
+
+
+    play1.onclick = function () {
+
+      play1.pseudoStyle("before", "font-family", "'FontAwesome'").pseudoStyle("before", "content", "'\\f01e'");
+
+      iphoneConture.reset().play();
+    }
+
+    play2.onclick = function () {
+
+      play2.pseudoStyle("before", "font-family", "'FontAwesome'").pseudoStyle("before", "content", "'\\f01e'");
+
+      ipadConture.reset().play();
+    }
+
+    var watch = document.getElementById("watch-display");
+
+    var onDisplay = true;
+
+    play3.onclick = function () {
+
+      play3.pseudoStyle("before", "font-family", "'FontAwesome'").pseudoStyle("before", "content", "'\\f01e'");
+
+      watchConture.reset().play();
+
+      if (onDisplay) {
+        watch.style.transitionDelay = "1.8s";
+        watch.style.transitionDuration = "1s";
+        watch.style.opacity = 1;
+      } else {
+        watch.style.transitionDelay = "0s";
+        watch.style.transitionDuration = "0s";
+        watch.style.opacity = 0;
+      }
+      onDisplay = !onDisplay;
+      
+    }
+  </script>
+  <script>
+    var circle = document.getElementById("circle");
+    var circleContainer = document.getElementById("circleContainer");
+    var segment = new Segment(circle, 10, 380);
+    circleContainer.addEventListener("mouseover", function() {
+      segment.draw('50', '380', 2, {circular: true});
+    });
+  </script>
+  <script src="hamburger.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,14 @@
+{
+  "name": "vr_demo",
+  "version": "1.0.0",
+  "description": "VR Demo Scene",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Sergey Primirenkov",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.15.2"
+  }
+}

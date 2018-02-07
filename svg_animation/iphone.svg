@@ -1,0 +1,26 @@
+<!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+<svg xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="131.99899" height="275.875" viewBox="0 0 131.99899 275.875" version="1.1" id="svg3396" inkscape:version="0.91 r13725" sodipodi:docname="iph.svg" class="">
+  <metadata id="metadata3433">
+    <rdf:rdf>
+      <cc:work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+        <dc:title>iphone</dc:title>
+      </cc:work>
+    </rdf:rdf>
+  </metadata>
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1920" inkscape:window-height="1018" id="namedview3431" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:zoom="0.84726867" inkscape:cx="348.17018" inkscape:cy="188.57323" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="svg3396"></sodipodi:namedview>
+  <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
+  <title id="title3398">iphone</title>
+  <desc id="desc3400">Created with Sketch.</desc>
+  <defs id="defs3402"></defs>
+  <g id="Page-1" sketch:type="MSPage" transform="translate(-575.001,-176.081)" style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1">
+    <g id="iphone" sketch:type="MSLayerGroup" transform="translate(576,177)" style="stroke:#5d5d5d">
+      <path d="m 130,257.964 c 0,8.833 -7.191,15.992 -16.062,15.992 l -97.875,0 c -8.871,0 -16.062,-7.159 -16.062,-15.992 l 0,-241.891 C 0.001,7.24 7.192,0.081 16.063,0.081 l 97.875,0 C 122.809,0.081 130,7.24 130,16.073 l 0,241.891 0,0 z" id="path3422" sketch:type="MSShapeGroup" inkscape:connector-curvature="0" style="fill:#fff;stroke-width:2" class="iGQcKWwa_0"></path>
+      <path id="rect3424" sketch:type="MSShapeGroup" width="111.93" height="199.084" style="fill:#ffffff;stroke-width:2" d="M9 36 L120.93 36 L120.93 235.084 L9 235.084 Z" class="iGQcKWwa_1"></path>
+      <path style="stroke-width:1" d="m 77,25.746 c 0,0.635 -0.439,1.147 -0.98,1.147 l -20.102,0 c -0.542,0 -0.98,-0.513 -0.98,-1.147 l 0,-2.58 c 0,-0.635 0.439,-1.147 0.98,-1.147 l 20.102,0 c 0.541,0 0.98,0.513 0.98,1.147 l 0,2.58 0,0 z" id="speaker" sketch:type="MSShapeGroup" inkscape:connector-curvature="0" class="iGQcKWwa_2"></path>
+      <path style="stroke-width:1" id="circle3427" sketch:type="MSShapeGroup" d="M63,12A3,3 0,1,1 69,12A3,3 0,1,1 63,12" class="iGQcKWwa_3"></path>
+      <path style="stroke-width:2" id="ellipse3429" sketch:type="MSShapeGroup" d="M55.000001000000005,254.00101A10.04,10.001 0,1,1 75.08000100000001,254.00101A10.04,10.001 0,1,1 55.000001000000005,254.00101" class="iGQcKWwa_4"></path>
+    </g>
+  </g>
+<style>.iGQcKWwa_0{stroke-dasharray:781 783;stroke-dashoffset:782;}.start .iGQcKWwa_0{animation:iGQcKWwa_draw 1500ms linear 0ms forwards;}.iGQcKWwa_1{stroke-dasharray:623 625;stroke-dashoffset:624;}.start .iGQcKWwa_1{animation:iGQcKWwa_draw 1500ms linear 0ms forwards;}.iGQcKWwa_2{stroke-dasharray:53 55;stroke-dashoffset:54;}.start .iGQcKWwa_2{animation:iGQcKWwa_draw 1500ms linear 0ms forwards;}.iGQcKWwa_3{stroke-dasharray:19 21;stroke-dashoffset:20;}.start .iGQcKWwa_3{animation:iGQcKWwa_draw 1500ms linear 0ms forwards;}.iGQcKWwa_4{stroke-dasharray:63 65;stroke-dashoffset:64;}.start .iGQcKWwa_4{animation:iGQcKWwa_draw 1500ms linear 0ms forwards;}@keyframes iGQcKWwa_draw{100%{stroke-dashoffset:0;}}@keyframes iGQcKWwa_fade{0%{stroke-opacity:1;}92.98245614035088%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
