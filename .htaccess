@@ -1,0 +1,24 @@
+AddOutputFilterByType DEFLATE text/plain
+
+AddOutputFilterByType DEFLATE text/html
+
+AddOutputFilterByType DEFLATE text/xml
+
+AddOutputFilterByType DEFLATE text/css
+
+AddOutputFilterByType DEFLATE application/xml
+
+AddOutputFilterByType DEFLATE application/xhtml+xml
+
+AddOutputFilterByType DEFLATE application/rss+xml
+
+AddOutputFilterByType DEFLATE application/javascript
+
+AddOutputFilterByType DEFLATE application/x-javascript
+
+<IfModule mod_expires.c>
+  <Filesmatch "\.(jpg|jpeg|png|gif|js|css|swf|ico|woff|mp3)$">
+      ExpiresActive on
+      ExpiresDefault "access plus 365 days"
+  </Filesmatch>
+</IfModule>
