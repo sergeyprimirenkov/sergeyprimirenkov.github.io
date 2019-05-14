@@ -1,0 +1,16 @@
+{
+  "games":[
+    {
+      "id": 1,
+      "title": "First Game",
+      "description": "Bla-bla",
+      "image": "./assets/images/lol.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Second Game",
+      "description": "Bla-bla",
+      "image": "./assets/images/lol.jpg"
+    }
+  ]
+}
