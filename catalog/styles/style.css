@@ -181,6 +181,10 @@ section.form {
   transition: all .3s linear;
 }
 
+.contact-me a {
+  color: #fff;
+}
+
 @media (min-width: 480px) {
   .adaptive-image {
     width: 350px;
