@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Веб-приложение Каталог</title>
   <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/style.min.css">
 </head>
 
 <body>
@@ -25,91 +25,103 @@
         </p>
       </div>
       <div class="header__img">
-        <img src="images/header__iphone.png" alt="">
+        <img src="images/header__iphone.png" alt="" class="adaptive-image">
       </div>
     </div>
   </header>
 
   <section class="section adaptive crimson">
     <div class="container">
-      <h2 class="section__name">
-        Адаптивный дизайн
-      </h2>
-      <p class="section__desc">
-        Сетка приложения подстраивается под размеры разных устройств, выглядит и работает одинаково хорошо, будь то смартфон, планшет, ноутбук или монитор настольного компьютера.
-      </p>
+      <div class="section__info">
+        <h2 class="section__name">
+          Адаптивный дизайн
+        </h2>
+        <p class="section__desc">
+          Сетка приложения подстраивается под размеры разных устройств, выглядит и работает одинаково хорошо, будь то смартфон, планшет, ноутбук или монитор настольного компьютера.
+        </p>
+      </div>
       <div class="section__img">
-        <img src="images/adaptive.png" alt="">
+        <img src="images/adaptive.png" alt="" class="adaptive-image">
       </div>
     </div>
   </section>
 
     <section class="section transition amin overflow">
       <div class="container">
-        <h2 class="section__name">
-          Быстрый переход<br class="section__caret"> на страницу игры
-        </h2>
-        <p class="section__desc">
-          Переход с общего списка игр на страницу конкретной игры - без загрузок и ожиданий - так, как и должно работать одностраничное веб-приложение.
-        </p>
+        <div class="section__info">
+          <h2 class="section__name">
+            Быстрый переход<br class="section__caret"> на страницу игры
+          </h2>
+          <p class="section__desc">
+            Переход с общего списка игр на страницу конкретной игры - без загрузок и ожиданий - так, как и должно работать одностраничное веб-приложение.
+          </p>
+        </div>
         <div class="section__img">
-          <img src="images/transition__demo.gif" alt="">
+          <img src="images/transition__demo.gif" alt="" class="adaptive-image">
         </div>
       </div>
   </section>
 
   <section class="section wishlist crimson overflow">
     <div class="container">
-      <h2 class="section__name">
-        Вишлист
-      </h2>
-      <p class="section__desc">
-        Помимо вкладок для разных платформ предусмотрена отдельная вкладка для списка избранных игр. Избранные игры сохраняются в памяти устройства и никуда не пропадают при закрытии браузера.
-      </p>
+      <div class="section__info">
+        <h2 class="section__name">
+          Вишлист
+        </h2>
+        <p class="section__desc">
+          Помимо вкладок для разных платформ предусмотрена отдельная вкладка для списка избранных игр. Избранные игры сохраняются в памяти устройства и никуда не пропадают при закрытии браузера.
+        </p>
+      </div>
       <div class="section__img">
-        <img src="images/wishlist__iphone.png" alt="">
+        <img src="images/wishlist__iphone.png" alt="" class="adaptive-image">
       </div>
     </div>
   </section>
 
   <section class="search wishlist amin overflow">
     <div class="container">
-      <h2 class="section__name">
-        Реактивный поиск
-      </h2>
-      <p class="section__desc">
-        Поиск игры по названию - начинайте вводить запрос и результаты мгновенно отобразятся на странице.
-      </p>
+      <div class="section__info">
+        <h2 class="section__name">
+          Реактивный поиск
+        </h2>
+        <p class="section__desc">
+          Поиск игры по названию - начинайте вводить запрос и результаты мгновенно отобразятся на странице.
+        </p>
+      </div>
       <div class="section__img">
-        <img src="images/search__iphone.png" alt="">
+        <img src="images/search__iphone.png" alt="" class="adaptive-image">
       </div>
     </div>
   </section>
 
   <section class="child crimson overflow">
     <div class="container">
-      <h2 class="section__name">
-        Детский фильтр
-      </h2>
-      <p class="section__desc">
-        Чтобы временно исключить игры, не предназначенные для детской аудитории - отметьте соответствующий флажок.
-      </p>
+      <div class="section__info">
+        <h2 class="section__name">
+          Детский фильтр
+        </h2>
+        <p class="section__desc">
+          Чтобы временно исключить игры, не предназначенные для детской аудитории - отметьте соответствующий флажок.
+        </p>
+      </div>
       <div class="section__img">
-        <img src="images/child__iphone.png" alt="">
+        <img src="images/child__iphone.png" alt="" class="adaptive-image">
       </div>
     </div>
   </section>
 
   <section class="form amin overflow">
     <div class="container">
-      <h2 class="section__name">
-        Бронирование мест
-      </h2>
-      <p class="section__desc">
-        Предоставьте своим клиентам возможность заблаговременно забронировать место. После отправки заполненной формы на e-mail приходит уведомление с указанными данными.
-      </p>
+      <div class="section__info">
+        <h2 class="section__name">
+          Бронирование мест
+        </h2>
+        <p class="section__desc">
+          Предоставьте своим клиентам возможность заблаговременно забронировать место. После отправки заполненной формы на e-mail приходит уведомление с указанными данными.
+        </p>
+      </div>
       <div class="section__img">
-        <img src="images/two-iphones-form.png" alt="">
+        <img src="images/two-iphones-form.png" alt="" class="adaptive-image">
       </div>
     </div>
   </section>
@@ -125,17 +137,7 @@
           </h3>
           <div class="projects__img">
             <a href="#">
-              <img src="images/driv3r.jpg" alt="">
-            </a>
-          </div>
-        </div>
-      <div class="projects__item">
-          <h3 class="projects__name">
-              DriV3R
-          </h3>
-          <div class="projects__img">
-            <a href="#">
-              <img src="images/driv3r.jpg" alt="">
+              <img src="images/driv3r.jpg" alt="" class="adaptive-image">
             </a>
           </div>
         </div>
@@ -187,10 +189,6 @@
     </svg>
   </div>
 
-
-  <script>
-  document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')
-  </script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script>
     ScrollReveal().reveal('.header__name', { distance: '50px' });
@@ -206,7 +204,7 @@
     ScrollReveal().reveal('.projects__name', { distance: '50px' });
     ScrollReveal().reveal('.projects__img', { distance: '50px' });
 
-    ScrollReveal().reveal('.contact-me__social', { distance: '50px' });
+    ScrollReveal().reveal('.contact-me__social', { easing: 'ease-in' });
   </script>
 </body>
 
