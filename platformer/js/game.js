@@ -7,7 +7,7 @@
 
 // var game = new Phaser.Game(newWidth, newHeight, Phaser.CANVAS);
 
-var game = new Phaser.Game(window.innerWidth * window.devicePixelRatio, window.innerHeight * window.devicePixelRatio, Phaser.CANVAS);
+var game = new Phaser.Game(800, 600, Phaser.CANVAS);
 
 game.state.add('boot', boot);
 game.state.add('load', load);

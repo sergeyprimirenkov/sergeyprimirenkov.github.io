@@ -12,8 +12,8 @@ var boot = {
   },
 
   preload: function() {
-    this.load.image('logo', '../assets/logo.png');
-    this.load.image('preloadBar', '../assets/progressBar.png');
+    this.load.image('logo', '../platformer/assets/logo.png');
+    this.load.image('preloadBar', '../platformer/assets/progressBar.png');
   },
 
   create: function() {
