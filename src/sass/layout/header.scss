@@ -1,0 +1,50 @@
+@include font-face("Museo", "/fonts/Museo", 300);
+
+.header {
+  &__title {
+    margin-bottom: 12px;
+    font-family: "Museo", sans-serif;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 300;
+    text-align: center;
+
+    @media #{$tablet-width} {
+      font-size: 48px;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  &__contacts,
+  &__links {
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  &__links li {
+    display: inline-block;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    margin: auto;
+  }
+  
+  &__about {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}

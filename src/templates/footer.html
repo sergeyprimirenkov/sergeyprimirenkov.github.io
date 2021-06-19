@@ -1,0 +1,36 @@
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <header class="modal__header">
+        <h2 class="modal__title lang" id="modal-1-title" data-key="hey">
+          Привет👋
+        </h2>
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+      </header>
+      <main class="modal__content" id="modal-1-content">
+        <p class="lang" data-key="about">
+          Я начинающий UI/UX дизайнер. Люблю простые и понятные интерфейсы и
+          помогаю людям полюбить их. В работе использую Figma, Photoshop, Illustrator.
+        </p>
+        <p class="lang" data-key="about2">
+          Есть опыт во фронтенд-разработке - HTML, CSS, SASS, JS, Vue, Git, Gulp. Открыт новым профессиональным
+          знакомствам и предложениям о сотрудничестве.
+        </p>
+      </main>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    &copy; 2021,
+    <div class="lang footer__info" data-key="name">
+      Сергей Примиренков
+    </div>
+    <span id="hey" class="wave wave--anim hey">👋</span>
+  </div>
+</footer>
+
+<include src="src/templates/modals.html"></include>
+<script defer src="/js/libs.min.js"></script>
+<script defer src="/js/app.js"></script>

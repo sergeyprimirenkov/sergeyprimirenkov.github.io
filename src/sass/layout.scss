@@ -1,0 +1,19 @@
+$screen-xs: 320px;
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1600px;
+
+$small-mobile-width: "(min-width: #{$screen-xs})";
+$medium-mobile-width: "(min-width: #{$screen-sm})";
+$mobile-width: "(min-width: #{$screen-sm})";
+$tablet-width: "(min-width: #{$screen-md})";
+$laptop-width: "(min-width: #{$screen-lg})";
+$desktop-width: "(min-width: #{$screen-xl})";
+$large-desktop-width: "(min-width: #{$screen-xxl})";
+
+@mixin container {
+  position: relative;
+  padding: 16px;
+}

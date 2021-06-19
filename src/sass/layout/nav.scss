@@ -1,0 +1,162 @@
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+  min-height: 100vh;
+  // overflow-y: scroll;
+  // -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  display: none;
+  touch-action: manipulation;
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  // will-change: transform;
+  background-color: $white;
+  min-height: 100vh;
+  touch-action: manipulation;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+.panel:before {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.panel-open:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.nav {
+  padding: 32px;
+  background-color: $black;
+
+  @media #{$tablet-width} {
+    // position: relative;
+    // float: left;
+    // overflow-y: auto;
+    // position: fixed;
+    // top: 0;
+    // bottom: 0;
+    // overflow-y: scroll;
+  }
+
+  * {
+    color: $white;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: darken($color: $white, $amount: 40);
+
+    @media #{$tablet-width} {
+      font-size: 16px;
+    }
+  }
+
+  &__section {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    list-style: none;
+
+    &:not(:last-child) {
+      position: relative;
+      text-transform: uppercase;
+
+      &::after {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        width: 40px;
+        height: 1px;
+        background-color: darken($color: $white, $amount: 60);
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 14px;
+    // letter-spacing: 1px;
+    color: darken($color: $white, $amount: 20);
+    transition: color 0.2s linear;
+
+    @media #{$tablet-width} {
+      font-size: 16px;
+    }
+
+    &:hover,
+    &:active {
+      color: $white;
+      text-decoration: none;
+      transition: color 0.2s linear;
+    }
+
+    &--active {
+      padding: 4px;
+      background-color: #000;
+    }
+  }
+
+  .is-checked {
+    font-weight: 600;
+    color: $white;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slideout-panel {
+    margin-left: 256px;
+  }
+
+  .slideout-menu {
+    display: block;
+  }
+
+  .btn-hamburger {
+    display: none;
+  }
+
+  .menu-section-list {
+    &--uppercase a {
+      letter-spacing: 1px;
+    }
+  }
+}

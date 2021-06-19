@@ -1,0 +1,6 @@
+@small - 385px
+@medium - 315px
+@large - 550px
+
+@small - 580px
+@large (min-width: 2560px) - 900px

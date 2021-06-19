@@ -1,0 +1,44 @@
+.link {
+  color: lighten($color: $black, $amount: 20);
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: $black;
+    transition: color 0.3s ease;
+  }
+
+  &--translate {
+    text-transform: uppercase;
+  }
+
+  &--is-checked {
+    font-weight: 600;
+    color: $black;
+  }
+
+  &--button {
+    padding: 8px 12px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: $white;
+    background-color: lighten($color: $black, $amount: 20);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+
+    &:hover {
+      color: $white;
+      background-color: $black;
+      transition: background-color 0.3s ease;
+    }
+  }
+
+  &--small {
+    padding: 6px 10px;
+    margin-left: 10px;
+    font-size: 12px;
+    letter-spacing: normal;
+  }
+}
