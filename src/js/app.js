@@ -47,6 +47,7 @@ lightGallery(lightGalleryBox, {
 var grid = document.querySelector('.gallery');
 var iso = new Isotope(grid, {
   itemSelector: '.gallery-item',
+  sortBy: 'random'
 });
 
 imagesLoaded(grid).on('progress', function() {
@@ -79,7 +80,7 @@ var arrLang = {
     desc: 'UI/UX. Графика. Фотообработка. Иллюстрация. Рекламные креативы.',
     hey: 'Привет 👋',
     about:
-      'Я начинающий UI/UX дизайнер. Люблю простые и понятные интерфейсы и помогаю людям полюбить их. В работе использую Figma, Photoshop, Illustrator.',
+      'Я начинающий UI/UX дизайнер. Люблю простые и понятные интерфейсы и помогаю людям полюбить их. В работе использую Figma, Photoshop, Illustrator, Blender.',
     about2:
       'Есть опыт во фронтенд-разработке - HTML, CSS, SASS, JS, Vue, Git, Gulp. Открыт новым профессиональным знакомствам и предложениям о сотрудничестве.',
     open: 'Открыть',
@@ -90,6 +91,7 @@ var arrLang = {
     ill: 'Иллюстрации',
     typo: 'Типографика',
     interfaces: 'Интерфейсы',
+    modeling: 'Моделирование',
     social: 'Сети',
     contacts: 'Контакты',
   },
@@ -99,7 +101,7 @@ var arrLang = {
       'UI/UX. Graphic. Photo processing. Illustration. Advertising creatives.',
     hey: 'Hi 👋',
     about:
-      'I am Beginner UI/UX designer. I love simple and intuitive interfaces and help people love them. I use Figma, Photoshop, and Illustrator in my work. ',
+      'I am Beginner UI/UX designer. I love simple and intuitive interfaces and help people love them. I use Figma, Photoshop, Illustrator and Blender in my work.',
     about2:
       'I have experience in frontend development - HTML, CSS, SASS, JS, Vue, Git, Gulp. I am open to new professional acquaintances and offers of cooperation.',
     open: 'Open',
@@ -110,6 +112,7 @@ var arrLang = {
     ill: 'Illustrations',
     typo: 'Typography',
     interfaces: 'Interfaces',
+    modeling: 'Modeling',
     social: 'Social',
     contacts: 'Contacts',
   },
