@@ -175,6 +175,8 @@ sayHey.addEventListener('click', function () {
   });
 });
 
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
 (function () {
   if (typeof EventTarget !== 'undefined') {
     var func = EventTarget.prototype.addEventListener;
