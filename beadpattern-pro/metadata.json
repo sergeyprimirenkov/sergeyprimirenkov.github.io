@@ -1,0 +1,5 @@
+{
+  "name": "BeadPattern Pro",
+  "description": "Professional tool for converting images into beadwork patterns with custom palettes, dithering, and PDF export support.",
+  "requestFramePermissions": []
+}
